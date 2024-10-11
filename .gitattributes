@@ -1,0 +1,22 @@
+# Ensure .gitignore uses LF line endings
+.gitignore text eol=lf
+
+# Ensure all text files use LF
+* text=auto eol=lf
+
+# Treat image files as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+
+# Treat other binary files
+*.pdf binary
+*.zip binary
+*.exe binary
+*.dll binary
+
+# Set specific file types to use CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf

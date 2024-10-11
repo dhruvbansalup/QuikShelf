@@ -12,3 +12,26 @@ bower_components
 psd
 thumb
 sketch
+
+.vscode
+.idea
+
+# API keys
+*.env
+.env.*
+config/*.json
+config/*.yaml
+
+# Node.js specific
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Virtual environments
+venv/
+ENV/
+env/
+venv.bak/
+venv.bak/
+
