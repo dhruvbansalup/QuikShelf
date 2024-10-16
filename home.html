@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuikShelf</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body class="bg-cyan-50">
+
+     <!-- navbar -->
+     <div id="main-navbar-placeholder" class="sticky top-0 z-50"></div>
+     <div id="sec-navbar-placeholder" class=""></div>
+     <script>
+         fetch('main-navbar.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('main-navbar-placeholder').innerHTML = data;
+             });
+         fetch('sec-navbar.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('sec-navbar-placeholder').innerHTML = data;
+             });
+     </script>
+
+    <!-- hero-section -->
+
+    <div class="w-full h-[30rem] bg-hero-background">
+        <div class="ml-36 mr-36 relative w-auto grid grid-cols-12 grid-flow-row gap-x-6 place-items-center">
+            <!-- left -->
+            <div class="w-full col-span-8 mt-16 mb-24 flex flex-col gap-6 place-items-center">
+                <div
+                    class="text-center text-white text-4xl font-normal font-['Pacifico']">
+                    All Your Reading Needs in One Place</div>
+                <div
+                    class="w-96 text-center text-white text-xl font-normal font-['Pacifico']">
+                    Join the Ultimate Reading Hub! Discover, Engage, and Earn Rewards While Sharing Your Love for Books.
+                </div>
+                <div
+                    class="w-96 h-20 rounded-full border-2 border-white flex-col justify-center items-center gap-2 inline-flex">
+                    <div
+                        class="self-stretch grow shrink basis-0 px-6 py-2.5 justify-center items-center gap-2 inline-flex">
+                        <div class="text-center text-white text-2xl font-normal font-['Figma Hand'] leading-tight tracking-tight">
+                            Start Exploring</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Graphics -->
+            <div class="w-full h-96 relative col-span-4 flex ">
+                <img class="w-[115px] h-[248px] left-[269.20px] top-[121.88px] absolute origin-top-left rotate-[124.90deg]"
+                    src="assets\images\graphics\water_ball_cap.gif" />
+                <img class="w-[231px] h-[245px] left-[11px] top-[108px] absolute"
+                    src="assets\images\graphics\water_ball.gif" />
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- main section -->
+    <main class="w-auto ml-36 mr-36 flex place-items-center top-[-5rem] relative">
+        <div class="bg-white pt-8 pb-8 col-span-12 w-full grid grid-cols-12 grid-flow-row gap-x-6 gap-y-5">
+
+            <!-- Top Picks -->
+             
+
+
+        </div>
+    </main>
+
+
+
+
+
+</body>
+
+</html>
