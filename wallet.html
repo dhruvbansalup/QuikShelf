@@ -11,9 +11,9 @@
 
 <body class="bg-background-texture">
     <!-- main -->
-    <main class="mt-5 w-auto grid grid-cols-12 gap-x-6 ml-36 mr-36 place-items-center">
+    <main class="mt-5 mb-5 gap-y-5 w-auto grid grid-cols-12 grid-flow-row gap-x-6 ml-36 mr-36 place-items-center">
         <!-- arrow -->
-        <div class=""><img class="h-10" src="assets/images/icons/arrow-back.png"></div>
+        <div class="place-self-start"><img class="w-[60%]" src="assets/images/icons/arrow-back.png"></div>
 
         <!-- Cards -->
         <div class="place-self-center h-[10.5rem] w-full col-span-11 flex justify-between">
@@ -49,18 +49,50 @@
             <!-- Card-4 -->
             <div class="h-full w-[30%]">
                 <div
-                    class="bg-[url(/assets/images/wallet_cards/card4.png)] bg-no-repeat w-full h-full flex flex-col place-content-center" style="background-size: 100% 100%;">
+                    class="bg-[url(/assets/images/wallet_cards/card4.png)] bg-no-repeat w-full h-full flex flex-col place-content-center relative" style="background-size: 100% 100%;">
                     <div class="m-8">
                         <div class="text-xl text-[#033265] font-bold font-['Nunito Sans']">Wallet Balance</div>
-                        <div class="text-white text-3xl font-bold font-['Poppins'] pt-[3.31rem]">10</div>
+                        <div class="text-white text-3xl font-bold font-['Poppins'] pt-[3.31rem] flex gap-4 place-items-center">
+                            <span><img class="" src="assets/images/coin1.svg" alt="" srcset=""></span>
+                            <span>1000</span>
+                            <span><img class="h-[3.2rem] absolute bottom-0 right-0" src="assets/images/icons/add.png" alt="" srcset=""></span>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
+
+        <!-- Wallet Activity -->
+         <div class="bg-white col-span-12 w-full rounded-3xl">
+
+            <!-- Header -->
+            <div class="flex  m-8">
+                <!-- Heading -->
+                <div class="w-auto text-black text-4xl font-medium font-['Poppins'] flex gap-2 place-items-center">
+                    <span class=""><img src="assets/images/icons/wallet_icon.svg" alt="" srcset=""></span>
+                    <span>Wallet Activity</span>
+                </div>
+                <!-- period buttons -->
+                <div class="flex gap-0 ml-auto">
+                    <div class="w-40 h-12 rounded-3xl text-center content-center text-black text-xl font-medium font-['Poppins']"><span>Monthly</span></div>
+                    <div class="w-40 h-12 rounded-3xl text-center content-center text-black text-xl font-medium font-['Poppins']"><span>Weekly</span></div>
+                    <div class="w-40 h-12 rounded-3xl text-center content-center bg-[#363062] text-white text-xl font-medium font-['Poppins']"><span>Today</span></div>
+                
+                </div>
+            </div>
+
+            <!-- Transactions -->
+             <div class="flex flex-col m-0">
+                
+             </div>
+
+         </div>
+
         
     </main>
-
 </body>
 
 </html>
+
+<!-- npx tailwindcss -i ./src/input.css -o ./wallet_page/wallet.css --watch -->
