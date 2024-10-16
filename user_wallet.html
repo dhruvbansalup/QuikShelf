@@ -5,11 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallet</title>
-    <link rel="stylesheet" href="wallet_page/wallet.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="fonts.css">
 </head>
 
 <body class="bg-background-texture">
+
+    <!-- navbar -->
+    <div id="main-navbar-placeholder" class="sticky top-0 z-50"></div>
+    <div id="sec-navbar-placeholder" class=""></div>
+    <script>
+        fetch('main-navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('main-navbar-placeholder').innerHTML = data;
+            });
+        fetch('sec-navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sec-navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
+
     <!-- main -->
     <main class="mt-5 mb-5 gap-y-5 w-auto grid grid-cols-12 grid-flow-row gap-x-6 ml-36 mr-36 place-items-center">
         <!-- arrow -->

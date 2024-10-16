@@ -602,6 +602,10 @@ video {
   top: 9.38px;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .col-span-11 {
   grid-column: span 11 / span 11;
 }
