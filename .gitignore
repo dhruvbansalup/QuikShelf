@@ -40,4 +40,4 @@ hackathon_details
 
 #tailwind
 tailwind.config.js
-src/input.css
+CSS/input.css
